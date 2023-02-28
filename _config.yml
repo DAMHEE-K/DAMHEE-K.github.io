@@ -6,3 +6,10 @@ name                     : "코딩을 연습해요"
 description              : "블로그"
 url                      : "https://DAMHEE-K.github.io"
 baseurl                  : # 서브 경로가 있는 경우 기재
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
