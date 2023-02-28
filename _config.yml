@@ -1,8 +1,8 @@
 remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "default"
 
-title                    : "GitHub Pages 따라하기"
-name                     : "코딩을 연습해요"
+title                    : "DAMI의 기록용 블로그"
+name                     : "DAMI의 기록용 블로그"
 description              : "블로그"
 url                      : "https://DAMHEE-K.github.io"
 baseurl                  : # 서브 경로가 있는 경우 기재
@@ -13,3 +13,17 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  # Site Author
+author:
+  name             : "DAMI"
+  avatar           : "/assets/images/bio-photo-keyboard.jpg"
+  bio              : "회사에서는 월급 받고 집에서는 취미로 코딩하는 개발자"
+  location         : "South Korea"
+  email            :
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: mailto:dh_kim0908@hanmail.net
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://DAMHEE-K.github.io"
