@@ -1,4 +1,6 @@
-remote_theme : "mmistakes/minimal-mistakes"
+remote_theme           : "mmistakes/minimal-mistakes"
+minimal_mistakes_skin    : "default"
+
 title                    : "GitHub Pages 따라하기"
 name                     : "코딩을 연습해요"
 description              : "블로그"
