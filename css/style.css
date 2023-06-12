@@ -1,0 +1,686 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'SUITE-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TheJamsil5Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TheJamsil3Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil3Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BookkMyungjo-Bd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Bd.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* common */
+html,body,div,span,applet,object,
+iframe,h1,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,
+big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,
+b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,
+tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,
+nav,output,ruby,section,summary,time,mark,audio,video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+
+}
+
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    display: block;
+}
+
+ol,ul {
+    list-style: none;
+}
+
+blockquote,q {
+    quotes: none;
+}
+
+blockquote:before,blockquote:after,q:before,q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+html {
+    background-color: #eee6d7;
+}
+
+/* common 끝 */
+
+
+
+/* 헤더 및 nav */
+header {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center
+}
+
+nav>div { float: left; }
+
+.kdh-logo,
+.kdh-logo>a {
+    list-style: none;
+    float: left;
+    display: flex;
+    margin: auto;
+    cursor: pointer;
+    line-height: 2.4;
+    padding: 10px;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+}
+
+.nav-menu { display: flex; }
+
+.nav-item {
+    list-style-type: none;
+    float: left;
+    margin: 10px;
+    margin-top: 35px;
+}
+
+.nav-item>a {
+    text-decoration: none;
+    font-family: 'BookkMyungjo-Bd', monospace;
+    color: black;
+}
+
+/* 헤더 및 nav 끝 */
+
+/* 자기소개 aboutMe*/
+
+.main-img {
+    /* 메인 이미지 */
+    margin-top: 100px;
+    margin-bottom: 70px;
+    width: 70%;
+    position: relative;
+    text-align: center;
+}
+
+.main-img>img {
+    /* 메인 이미지 어둡게 */
+    filter: brightness(50%);
+}
+
+.about-div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-img-text,
+.main-img-text2,
+.blink {
+    position: absolute;
+    top: 37%;
+    left: 48%;
+
+    color: rgba(255, 255, 255, 0.879);
+    text-decoration: none;
+
+    font-family: 'BookkMyungjo-Bd', monospace;
+    text-align: center;
+    font-size: 80px;
+}
+
+.main-img-text {
+    opacity: 1;
+    transform: translate(-5%, 15%);
+    transition-delay: 0.2s;
+}
+
+h2 {
+    text-decoration: none;
+    font-family: 'BookkMyungjo-Bd', monospace;
+    color: black;
+    font-size: 38px;
+
+    /* 중앙 정렬 */
+    display: flex;
+    justify-content: center;
+}
+
+.introduce-text {
+    font-family: 'SUITE-Regular', monospace;
+}
+
+/* about me 아이콘 */
+.about-icon {
+    margin: 20px;
+    width: 51.2px;
+}
+
+.introduce-box {
+    display: flex;
+}
+
+.profile-img>img {
+    width: 200px;
+}
+
+/* 교육란 */
+.edu-div h3 {
+    font-family: 'TheJamsil5Bold', 'monospace';
+    margin: 10px;
+    font-size: 20px
+}
+
+.edu-div {
+    font-family: 'SUITE-Regular', monospace;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.skill-div {
+    display: flex;
+    justify-content: center;
+}
+
+.skill-box1,
+.skill-box2,
+.skill-box3 {
+    width: 200px;
+    height: 210px;
+    background-color: #dbcfb4;
+    margin: 30px;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column
+}
+
+.skill-title {
+    font-family: 'TheJamsil5Bold', 'monospace';
+    font-size: 18px;
+    text-align: center;
+}
+
+.skill-icon {
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-icon>img {
+    margin-left: 20px;
+    height: 30px;
+}
+
+
+/* 프로젝트 */
+.img-container img,
+.img-container2 img {
+    width: 600px;
+    height: auto;
+}
+
+.img-container,
+.img-container2 {
+    width: 300vw;
+    height: auto;
+    transition: transform 0.5s;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnposition {
+    position: relative;
+    /* 버튼을 이미지 위에 고정시키기 위해서 위치 기준점 정해줌 */
+    height: auto;
+    width: auto;
+}
+
+.img-inner {
+    width: 100vw;
+    /* 뷰포트의 너비값과 높이값 */
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.skill-icon2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.prj-skill-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* 버튼 꾸미기 */
+button {
+    background: transparent;
+    /* 부모 배경을 그대로 가져옴 */
+    color: #c66d54d2;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: 800ms ease all;
+
+    font-size: 30px;
+    font-weight: bold;
+}
+
+button.backBtn {
+    position: absolute;
+    left: 28%;
+    top: 50%;
+    z-index: 5;
+}
+
+button.backBtn2 {
+    /* 부모(img-container를 기준으로 위치를 정해줌) */
+    position: absolute;
+    left: 28%;
+    top: 50%;
+    z-index: 5;
+}
+
+button.nextBtn {
+    position: absolute;
+    left: 71%;
+    top: 50%;
+    z-index: 5;
+}
+
+button.nextBtn2 {
+    position: absolute;
+    left: 71%;
+    top: 50%;
+    z-index: 5;
+}
+
+.prj-div {
+    display: flex;
+    flex-direction: column
+}
+
+.prj-title,
+.prj-github {
+    text-align: center;
+    font-family: 'TheJamsil5Bold', 'monospace';
+    font-size: 21px;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.prj-div>p {
+    font-family: 'SUITE-Regular', 'monospace';
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.prj-text-info,
+.prj-text-skill-info {
+    /* 프로젝트 설명란 */
+    font-family: 'SUITE-Regular', monospace;
+    text-align: center;
+    font-size: 18px;
+}
+
+.prj-hr {
+    height: 3px;
+    width: 70px;
+    border: 0;
+    background: #b7a587;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.skill-icon,
+.prj-github {
+    margin: 20px;
+    text-align: center;
+}
+
+
+/* 아카이브 */
+.archive-img-box {
+    margin: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.archive-box>div {
+    width: 300px;
+    background-color: #e4dac4;
+    margin: 40px;
+    padding: 30px;
+    border-radius: 15%;
+}
+
+.archive-box {
+    justify-content: center;
+    display: flex;
+}
+
+.archive-title {
+    font-family: 'TheJamsil5Bold', 'monospace';
+    font-size: 20px;
+    text-align: center;
+}
+
+.arcive-box-github,
+.arcive-box-blog {
+    text-align: center;
+}
+
+.arcive-box-github>a,
+.arcive-box-blog>a {
+    text-decoration: none;
+    color: rgb(68, 75, 117);
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.arcive-box-github>ul,
+.arcive-box-blog>ul {
+    list-style-type: none;
+}
+
+.archive-text {
+    font-family: 'TheJamsil3Regular', 'monospace';
+}
+
+
+/* 로드맵 */
+.roadmap-container {
+    /* 로드맵 이미지 컨테이너 */
+    width: 80%;
+    overflow-x: scroll;
+    height: 700px;
+    white-space: nowrap;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.roadmap-div {
+    display: flex;
+    justify-content: center;
+}
+
+/* 로드맵 컨테이너 안 스크롤바 디자인 */
+.roadmap-container::-webkit-scrollbar {
+    /* 너비 */
+    width: 3px;
+}
+
+.roadmap-container::-webkit-scrollbar-thumb {
+    height: 30%;
+    /* 길이 */
+    background: #cdbb9c;
+    border-radius: 10px;
+}
+
+
+/* 기타 */
+hr {
+    height: 1px;
+    border: 0;
+    background: rgba(99, 99, 99, 0.395);
+    margin: 20px;
+}
+
+/* 여행탭 */
+#worldmap {
+    position: relative; /* 버튼 위치 잡기 위해 설정 */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#worldmap img {
+    width: 80%;
+}
+ 
+
+#travel-btn1 {
+    position: absolute;
+    top: 36%;
+    left: 15%;
+
+    background: rgba(219, 79, 79, 0.598);
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+
+    z-index: 2;
+}
+
+#travel-btn2 {
+    position: absolute;
+    top: 32%;
+    left: 18%;
+
+    background: rgba(219, 79, 79, 0.598);
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+
+    z-index: 2;
+}
+
+#travel-btn3 {
+    position: absolute;
+    top: 53%;
+    left: 39%;
+
+    background: rgba(219, 79, 79, 0.598);
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+
+    z-index: 2;
+}
+
+
+/* 모달창 */
+#modal {
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+}
+
+.modal-content {
+    background-color: #cdbb9c;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+    border-radius: 5%;
+}
+
+.modal-content>h2 {
+    font-size: 27px;
+    font-family: 'SUITE-Regular', 'monospace';
+    font-weight: 400;
+}
+
+#close-modal {
+    color: #353535;
+    float: right;
+}
+
+.modal-img {
+    display: none;
+    max-width: 100%;
+}
+
+.modal-img-container img.active {
+    display: block;
+}
+
+.modal-img-container {
+    width: 100%;
+    display: flex;
+}
+
+.modal-content {
+    overflow: hidden;
+}
+
+.modal-img-container img {
+    flex: 1; /* 동일한 크기로 배치하기 위해 flex 속성 적용 */
+    max-width: 100%; /* 이미지의 최대 너비 설정 */
+    object-fit: cover; /* 이미지가 요소에 맞게 확대/축소되어 표시되도록 설정 */
+    margin-right: 20px;
+    border-radius: 5%;
+}
+#modal-img2 {
+    margin-left: 55px;
+}
+
+.top-btn {
+    position: fixed;
+    width: 50px;
+    right: 2%;
+    bottom: 40px;
+    z-index: 999;
+}
+
+
+
+
+/* THANKS */
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:900');
+
+text {
+    fill: #35322a;
+    filter: url('#money');
+    font-family: 'Playfair Display', 'Georgia', serif;
+    font-size: 70px;
+    font-weight: 900;
+}
+
+.thanks {
+    display: flex;
+    justify-content: center;
+}
+
+
+.s1_arrow {
+    display: flex;
+    position: relative;
+    top: 20px;
+    margin-left: -10px;
+    text-align: center;
+    animation: arrow_down 1.5s infinite;
+    flex-direction: column;
+    align-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.scroll-arrow {
+    width: 8px;
+    height: 8px;
+    margin: 5px;
+    border-right: 3px solid #ac9977ee;
+    border-bottom: 3px solid #ac9977ee;
+    ;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    animation: arrow-wave 1s infinite;
+    animation-direction: alternate;
+}
+
+.scroll-arrow:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.scroll-arrow:nth-child(2) {
+    margin-top: 6px;
+    animation-delay: 0.2s;
+}
+
+.scroll-arrow:nth-child(3) {
+    margin-top: 6px;
+    animation-delay: 0.3s;
+}
+
+@keyframes arrow-wave {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes arrow_down {
+    0% {
+        top: 28px;
+    }
+
+    50% {
+        top: 40px;
+    }
+
+    100% {
+        top: 28px;
+    }
+}
